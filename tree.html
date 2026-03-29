@@ -295,8 +295,8 @@ footer a{color:var(--acc);text-decoration:none}
 // ═══════════════════════════════════════════════
 //  DATA
 // ═══════════════════════════════════════════════
-const WF_DATA = null;
-const WF_META = null;  // {site, branch, path, updated}
+const WF_DATA = {"items": [{"id": "a2d5773b-2123-7f25-7e8b-d987ded09048", "nm": "Intro", "no": "", "cp": false, "ch": [{"id": "c1c98d33-5b47-4793-db49-164246411679", "nm": "projeto de propriedade e autoria de FCS, para valorizar a ação criativa dos autores. ", "no": "", "cp": false, "ch": []}]}]};
+const WF_META = {"site": "sciencecertifier.com", "branch": "Intro", "path": "https://sciencecertifier.com/tree.html", "updated": "2026-03-29 10:52"};  // {site, branch, path, updated}
 
 const IDX = [];
 let TOTAL = 0;
@@ -489,7 +489,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (idx < nodes.length) {
       requestAnimationFrame(buildChunk);
     } else {
-      document.getElementById('pub-date').textContent = new Date().toLocaleString('pt-BR');
+      document.getElementById('pub-date').textContent = '2026-03-29 10:52:14';
       document.getElementById('sTotal').textContent = TOTAL;
       document.getElementById('fstats').textContent = TOTAL + ' nos · ' + nodes.length + ' raizes';
       document.getElementById('q').addEventListener('input', e => search(e.target.value));
